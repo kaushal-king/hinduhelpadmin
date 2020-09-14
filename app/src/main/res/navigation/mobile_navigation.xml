@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_dash">
+
+    <fragment
+        android:id="@+id/nav_dash"
+        android:name="com.example.hinduhelpadmin.ui.dashboard.dashFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_dash" >
+        <action
+            android:id="@+id/action_nav_dash_to_nav_help"
+            app:destination="@id/nav_help" />
+        <action
+            android:id="@+id/action_nav_dash_to_nav_helppend"
+            app:destination="@id/nav_helppend" />
+        <action
+            android:id="@+id/action_nav_dash_to_nav_helpsolve"
+            app:destination="@id/nav_helpsolve" />
+        <action
+            android:id="@+id/action_nav_dash_to_nav_tools"
+            app:destination="@id/nav_tools" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_help"
+        android:name="com.example.hinduhelpadmin.ui.help.helpFragment"
+        android:label="@string/menu_help"
+        tools:layout="@layout/fragment_help" />
+
+    <fragment
+        android:id="@+id/nav_helppend"
+        android:name="com.example.hinduhelpadmin.ui.helppend.helppendFragment"
+        android:label="@string/menu_helppendd"
+        tools:layout="@layout/fragment_helppend" />
+
+    <fragment
+        android:id="@+id/nav_helpsolve"
+        android:name="com.example.hinduhelpadmin.ui.solve.solveFragment"
+        android:label="@string/menu_solve"
+        tools:layout="@layout/fragment_solve" />
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.example.hinduhelpadmin.ui.tools.toolsFragment"
+        android:label="@string/menu_tools"
+        tools:layout="@layout/fragment_tools" />
+
+
+</navigation>

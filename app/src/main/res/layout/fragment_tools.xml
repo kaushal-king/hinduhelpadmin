@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whiteTextColor">
+
+    <FrameLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/blanckheader2" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_17sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:layout_weight="1">
+                        <TextView
+                            android:id="@+id/user_name"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kaushal Jethava"
+
+                            android:textColor="@color/whiteTextColor"
+                            android:textStyle="bold"
+                            android:textSize="21sp"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:layout_weight="1">
+                        <TextView
+                            android:id="@+id/user_mob"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="C-301"
+
+                            android:textColor="@color/whiteTextColor"
+                            android:textStyle="bold"
+                            android:textSize="21sp"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_weight="3">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/pre_dp"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/_11sdp"
+                        android:src="@drawable/logo2" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_50sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+
+                    android:layout_marginTop="@dimen/_10sdp">
+                    <ImageView
+
+
+                        android:id="@+id/Personal_pro_icon"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/personaler" />
+                    <TextView
+                        android:id="@+id/personal_pro"
+                        android:layout_toRightOf="@id/Personal_pro_icon"
+                        android:layout_width="match_parent"
+                        android:gravity="center_vertical"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_6sdp"
+
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:text="Personal Details"
+
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:layout_marginLeft="@dimen/_12sdp"
+                        android:background="@color/gray"
+                        android:layout_below="@id/personal_pro"
+                        android:layout_marginTop="@dimen/_10sdp"
+
+                        />
+                    <ImageView
+
+                        android:id="@+id/changepass_pro_icon"
+                        android:layout_alignStart="@id/Personal_pro_icon"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_below="@id/Personal_pro_icon"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/change" />
+                    <TextView
+                        android:id="@+id/changepass_pro"
+                        android:layout_toRightOf="@id/Personal_pro_icon"
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/personal_pro"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:gravity="center_vertical"
+                        android:layout_alignStart="@id/personal_pro"
+                        android:text="Change Password"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:layout_marginLeft="@dimen/_12sdp"
+                        android:background="@color/gray"
+                        android:layout_below="@id/changepass_pro"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        />
+                    <ImageView
+
+                        android:id="@+id/exit_pro_icon"
+                        android:layout_alignStart="@id/Personal_pro_icon"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+
+                        android:layout_below="@id/changepass_pro_icon"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/exitr" />
+                    <TextView
+                        android:id="@+id/exit_pro"
+                        android:layout_toRightOf="@id/Personal_pro_icon"
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/changepass_pro"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:gravity="center_vertical"
+                        android:layout_alignStart="@id/personal_pro"
+                        android:text="Logout"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

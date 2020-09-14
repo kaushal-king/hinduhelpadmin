@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F8C400</color>
+    <color name="colorPrimaryDark">#F8C400</color>
+    <color name="colorAccent">#F8C400</color>
+
+
+
+    <!--colors for modern ui-->
+    <color name="whiteTextColor">#fff</color>
+    <color name="primaryTextColor">#F8C400</color>
+    <color name="loginBkColor">#f0f0f0</color>
+
+    <!--colros for card-->
+    <color name="whiteCardColor">#fff</color>
+    <color name="spinner">#F8C400</color>
+    <color name="detail_adderss">#F8C400</color>
+
+    <color name="number">#DDDDDD</color>
+    <color name="item_background">#ECECEC</color>
+    <color name="gray">#FF696969</color>
+    <color name="black">#000000</color>
+    <color name="gray_light">#f2f2f2</color>
+    <color name="lite_blue">#B3E0FF</color>
+</resources>
