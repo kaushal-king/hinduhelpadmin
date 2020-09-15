@@ -13,31 +13,8 @@ import retrofit2.http.POST;
 
 public interface Api {
 
-    @FormUrlEncoded
-    @POST("RegistrationControllerJson.php")
-    Call<CommanResponse> createUser(
 
-            @Field("loginRegistration") String loginRegistration,
-            @Field("fname") String fname,
-            @Field("lname") String lname,
-            @Field("mobileno") String mobileno,
-            @Field("email") String email,
-            @Field("address") String address,
-            @Field("pincode") String pincode,
-            @Field("state") String state,
-            @Field("dist") String dist,
-            @Field("pass") String pass
 
-    );
-
-    @FormUrlEncoded
-    @POST("help.php")
-    Call<helpresponce> hcmp(
-
-            @Field("helpadmin") String helpadmin,
-            @Field("state") String state,
-            @Field("dist") String dist
-    );
 
 
     @FormUrlEncoded
@@ -81,6 +58,14 @@ public interface Api {
             @Field("dist") String dist
     );
 
+    @FormUrlEncoded
+    @POST("help.php")
+    Call<helpresponce> hcmp(
+
+            @Field("helpadmin") String helpadmin,
+            @Field("state") String state,
+            @Field("dist") String dist
+    );
 
 
     @FormUrlEncoded
@@ -92,29 +77,7 @@ public interface Api {
             @Field("pass") String pass
     );
 
-    @FormUrlEncoded
-    @POST("help.php")
-    Call<CommanResponse> addhelp(
 
-            @Field("helpadd") String helpadd,
-            @Field("fullname") String fullname,
-            @Field("mobileno") String mobileno,
-            @Field("email") String email,
-            @Field("address") String address,
-            @Field("pincode") String pincode,
-            @Field("state") String state,
-            @Field("dist") String dist,
-            @Field("typehelp") String typehelp,
-            @Field("helpmode") String helpmode,
-            @Field("datehelp") String datehelp,
-            @Field("status") String status,
-            @Field("helper") String helper,
-            @Field("hmob") String hmob,
-            @Field("hdisc") String hdisc,
-            @Field("uid") String uid
-
-
-    );
 
     @FormUrlEncoded
     @POST("prof.php")

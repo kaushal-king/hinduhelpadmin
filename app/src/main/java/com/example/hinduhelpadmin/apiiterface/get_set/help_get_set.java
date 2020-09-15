@@ -2,15 +2,19 @@ package com.example.hinduhelpadmin.apiiterface.get_set;
 
 public class help_get_set {
     int id;
-    String fullname,datehelp,hdisc,helper,hmob;
+    String fullname,datehelp,hdisc,helper,hmob,mobileno,typehelp,helpmode,subhelp;
 
-    public help_get_set(int id, String fullname, String datehelp, String hdisc, String helper, String hmob) {
+    public help_get_set(int id, String fullname, String datehelp, String hdisc, String helper, String hmob,String mobileno,String typehelp,String helpmode,String subhelp) {
         this.id = id;
         this.fullname = fullname;
         this.datehelp = datehelp;
         this.hdisc = hdisc;
         this.helper = helper;
         this.hmob = hmob;
+        this.mobileno=mobileno;
+        this.typehelp=typehelp;
+        this.helpmode=helpmode;
+        this.subhelp=subhelp;
     }
 
     public int getId() {
@@ -59,5 +63,38 @@ public class help_get_set {
 
     public void setHmob(String hmob) {
         this.hmob = hmob;
+    }
+
+    public String getMobileno() {
+        return mobileno;
+    }
+
+    public void setMobileno(String mobileno) {
+        this.mobileno = mobileno;
+    }
+
+
+    public String getTypehelp() {
+        return typehelp;
+    }
+
+    public void setTypehelp(String typehelp) {
+        this.typehelp = typehelp;
+    }
+
+    public String getHelpmode() {
+        return helpmode;
+    }
+
+    public void setHelpmode(String helpmode) {
+        this.helpmode = helpmode;
+    }
+
+    public String getSubhelp() {
+        return subhelp;
+    }
+
+    public void setSubhelp(String subhelp) {
+        this.subhelp = subhelp;
     }
 }
